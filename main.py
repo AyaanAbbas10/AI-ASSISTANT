@@ -90,13 +90,13 @@ def processCommand(c):
 
 
 if __name__ == "__main__":
-    speak("Initializing Alexa....")
+    speak("Initializing VIRTUAL ASSISTANT....")
     while True:
-        # Listen for the wake word "Jarvis"
+        # Listen for the wake word "Jarvis","Zara"(in this case) 
         # obtain audio from the microphone
         r = sr.Recognizer()
          
-        print("recognizing...")
+        print("Recognizing...")
         try:
             with sr.Microphone() as source:
                 print("Listening...")
@@ -106,7 +106,7 @@ if __name__ == "__main__":
                 speak("Yeah")
                 # Listen for command
                 with sr.Microphone() as source:
-                    print("Alexa Active...")
+                    print("Virtual AI Active...")
                     audio = r.listen(source)
                     command = r.recognize_google(audio)
 
